@@ -1,1 +1,7 @@
 # notes-reorderer
+
+Currently just a simple python script which receives a pdf in two column format and an fdf file with highlighted sections from that pdf file. Upon invocation the script reorders the highlighted notes into the order that one would usually read a two column text in (left column top to bottom, then right column top to bottom). The reordered notes are then printed to a file with nice formatting.
+
+## Why does this script exist
+
+To understand scientific papers better and faster I like to highlight important bits in the pdf and then export those to Sublime Text / Notion. However I don't want to manually copy and paste the highlighted sections by hand. I also noticed that notes which I exported from Skim (https://skim-app.sourceforge.io/) were either not in the right order or in a difficult format due to the double column format which scientific papers often have. My idea is to end up with a script which I can trigger in Skim itself (https://sourceforge.net/p/skim-app/wiki/Tips_and_Tricks/#script-menu) and which exports the highlighted sections in the proper order and with nice formatting. Ideally I also want to add an LLM integration so duplicate notes are eliminated and notes which belong together are fused in a nice manner.
